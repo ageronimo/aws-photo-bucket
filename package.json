@@ -1,0 +1,20 @@
+{
+  "name": "aws-photo-bucket",
+  "version": "1.0.0",
+  "description": "[Intermediate] AWS, S3, Api-Gatway, Lambda, Serverless - Intro into AWS cloud services and Serverless",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ageronimo/aws-photo-bucket.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ageronimo/aws-photo-bucket/issues"
+  },
+  "homepage": "https://github.com/ageronimo/aws-photo-bucket#readme"
+}
