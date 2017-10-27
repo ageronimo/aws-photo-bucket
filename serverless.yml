@@ -55,8 +55,20 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  hello:
-    handler: handler.hello
+  request:
+    hander: handler.request
+
+#add GET route?
+
+cors:
+  origin: '*'
+  headers:
+    - Content-Type
+    - X-Amz-Date
+    - Authorization
+    - X-Api-Key
+    - X-Amz-Security-Token
+    - X-Amz-User-Agent
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
