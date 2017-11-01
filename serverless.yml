@@ -55,20 +55,26 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  request:
-    hander: handler.request
+  getData:
+    handler: handler.getData
+    events:
+      - http:
+          path: users/photos
+          method: get
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
 
 #add GET route?
 
-cors:
-  origin: '*'
-  headers:
-    - Content-Type
-    - X-Amz-Date
-    - Authorization
-    - X-Api-Key
-    - X-Amz-Security-Token
-    - X-Amz-User-Agent
+region: us-west-2
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events

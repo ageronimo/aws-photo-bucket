@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ageronimo/aws-photo-bucket/issues"
   },
-  "homepage": "https://github.com/ageronimo/aws-photo-bucket#readme"
+  "homepage": "https://github.com/ageronimo/aws-photo-bucket#readme",
+  "dependencies": {
+    "aws-sdk": "^2.142.0"
+  }
 }

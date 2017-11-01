@@ -1,17 +1,25 @@
 'use strict';
 
-module.exports.request = (event, context, callback) => {
+module.exports.getData = (event, context, callback) => {
   const AWS = require('aws-sdk');
   const s3 = new AWS.S3();
   const params = { Bucket: 'photo-bucket-tmp-prjct'};
+
+  let dataa = 'test';
+
 
   s3.listObjects(params, function(err,data) {
     if (err) {
       console.log(err, err.stack);
     } else {
-      console.log(data)
+      console.log(data);
     }
-  })
+  });
+
+
+console.log(`This is hard: ${dataa}`)
+  //loop through objects to get key
+  //console.log(storeData.Contents[1].Key)
 
   // setting a CORS header:
   // requestVar.setRequestHeader('Access-Control-Alow-Origin', '*')
