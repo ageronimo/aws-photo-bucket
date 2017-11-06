@@ -1,12 +1,10 @@
 const buildHTML = (response) => {
-  $('body').append('<h3>Here are your pictures:<h3>');
-  console.log(`buildHTML is building with: ${response}`)
+  $('.picture-container').append('<h3>Here are your pictures:<h3>');
   response.map( link => {
-    $('body').append(`
+    $('.picture-container').append(`
       <div class="picture">
         <img src="https://s3-us-west-2.amazonaws.com/photo-bucket-tmp-prjct/${link}"/>
-      </div>
-    `);
+      </div>`);
   });
 };
 
@@ -16,7 +14,6 @@ const makeRequest = () => {
     type: 'GET',
     success: (data) => {
       console.log('Your request succeeded!');
-      console.log(`This is your data: ${data.message}`);
       buildHTML(data.message);
     },
     error: () => console.log('ERROR: Request failed!')
