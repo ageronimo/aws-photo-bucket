@@ -1,5 +1,5 @@
 const buildHTML = (response) => {
-  $('.picture-container').append('<h3>Here are your pictures:<h3>');
+  $('.picture-container').append('<h3>You asked for it...<h3>');
   response.map( link => {
     $('.picture-container').append(`
       <div class="picture">

@@ -1,12 +1,53 @@
+body {
+	text-align: center;
+	background-color: #CDF2CF;
+	font-family: 'Montserrat', sans-serif;
+}
+
 #clickMe {
   width: 12em;
   margin: 0 auto;
   padding: 1em;
+  background-color: #566246;
+  color: #F1F2EB;
+  border: 1px none white;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+button {
+  cursor: pointer;
+	transition-duration: .3s;
+}
+
+#clickMe:hover {
+  border: 2px solid #566246;
+	background-color: white;
+	color: black;
 }
 
 .picture-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
 }
 
+h3 {
+	width: 100%;
+}
+
+.picture {
+	width: 500px;
+	margin: 10px 10px;
+	padding: 5px;
+	border: 2px solid #4A4A48;
+	border-radius: 10px;
+	background-color: #F1F2EB;
+}
+
+img {
+	width: 100%;
+	border-radius: 8px;
+	height: 100%;
+}
