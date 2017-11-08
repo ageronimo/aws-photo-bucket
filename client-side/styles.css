@@ -5,12 +5,12 @@ body {
 }
 
 #clickMe {
-  width: 12em;
+  width: 150px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 15px;
   background-color: #566246;
   color: #F1F2EB;
-  border: 1px none white;
+  border: none;
   border-radius: 8px;
   display: inline-block;
 }
@@ -24,6 +24,7 @@ button {
   border: 2px solid #566246;
 	background-color: white;
 	color: black;
+  padding: 13px;
 }
 
 .picture-container {

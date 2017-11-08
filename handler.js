@@ -14,15 +14,15 @@ module.exports.angelaPhotos = (event, context, callback) => {
       data.Contents.map(arr => picKeys.push(arr.Key))
       console.log(picKeys);
 
-      const response = {
-        statusCode: 200,
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Credentials': true
-        },
-        body: JSON.stringify({
-          message: picKeys,
-        }),
+    const response = {
+      statusCode: 200,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Credentials': true
+      },
+      body: JSON.stringify({
+        message: picKeys,
+      }),
     };
 
   callback(null, response);
