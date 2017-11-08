@@ -132,4 +132,5 @@ const params = { Bucket: 'photo-bucket-tmp-prjct'};
 
 - [AWS CLI Reference](https://docs.aws.amazon.com/cli/latest/reference/)
 
+- [Photo Bucket Example](http://photo-bucket-tmp-prjct-d-serverlessdeploymentbuck-1e6t8xptp5xvw.s3-website-us-west-2.amazonaws.com/)
 
